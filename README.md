@@ -51,3 +51,6 @@ chart.drawChart({
     srcPath: '../src' // 插件目录相对于页面的路径（若node节点未指定img则要提供本字段）
 }
 ```
+
+## 示例
+示例请[点击查看](https://laughsky.github.io/orbit-chart/example/index.html)

@@ -53,4 +53,4 @@ chart.drawChart({
 ```
 
 ## 示例
-示例请[点击查看](https://laughsky.github.io/orbit-chart/example/index.html)
+示例请<a href="https://laughsky.github.io/orbit-chart/example/index.html" target="_blank">点击查看</a>

@@ -19,8 +19,6 @@ var ajax = function (url, data, dataType, sucess, async, type, before, complete)
 }
 
 $(function () {
-    var srcPath = '../src'
-
     ajax('./data/type.json', {}, 'json', function (data, status) {
         var types = data
         ajax('./data/node.json', {}, 'json', function (data, status) {

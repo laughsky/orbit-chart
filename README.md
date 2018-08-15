@@ -34,8 +34,8 @@ chart.drawChart({
     },
     line: // 关系连线数据，结构如：
     {
-        preid: '前置节点ID',
-        id: '当前节点ID'
+        preid: '61C1C981-EFDE-4248-BC0D-FE0D817F9684', // 前置节点ID
+        id: 'DC1149DB-5C56-48A1-9401-C8A27D44CB10' // 当前节点ID
     },
     container: 'orbit-chart', // 图形容器div的ID，默认为orbit-chart
     typeWidth: 80, // 类别名称列的宽度，数字类型，默认80（像素）
@@ -46,11 +46,11 @@ chart.drawChart({
     nodeIcoSize: 16, // 节点图标的边长尺寸，数字类型，默认16（像素）
     gridLine: false, // 是否绘制网格线，布尔类型，默认false
     draggable: true, // 是否可拖动图形，布尔类型，默认true
-    before: funs // 图形绘制前置事件，function类型
-    complete: funs // 图形绘制完成事件，function类型
+    before: funs, // 图形绘制前置事件，function类型
+    complete: funs, // 图形绘制完成事件，function类型
     srcPath: '../src' // 插件目录相对于页面的路径（若node节点未指定img则要提供本字段）
 }
 ```
 
 ## 示例
-示例请<a href="https://laughsky.github.io/orbit-chart/example/index.html" target="_blank">点击查看</a>
+请[点击查看](https://laughsky.github.io/orbit-chart/example/index.html)示例

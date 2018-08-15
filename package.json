@@ -1,0 +1,24 @@
+{
+    "name": "orbit-chart",
+    "version": "1.0.0",
+    "description": "一个简单的轨道图插件，可按类别和时间点展示节点和关系图。",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/laughsky/orbit-chart.git"
+    },
+    "keywords": [
+        "orbit",
+        "orbital",
+        "chart"
+    ],
+    "author": "laughsky",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/laughsky/orbit-chart/issues"
+    },
+    "homepage": "https://github.com/laughsky/orbit-chart#readme"
+}

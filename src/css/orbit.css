@@ -1,0 +1,144 @@
+﻿
+/* 轨道图容器div样式 */
+.orbit-chart
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+}
+
+/* 类别名称区域div样式 */
+.orbit-type
+{
+    left: 0;
+    position: absolute;
+    vertical-align: middle;
+    border-left: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+    z-index: 50;
+    padding: 0 4px 0 4px;
+    margin: 0;
+}
+
+/* 类别节点区域div样式 */
+.orbit-type-node
+{
+    position: absolute;
+    border: solid 1px #cccccc;
+    border-top: none;
+    z-index: 50;
+    padding: 0;
+    margin: 0;
+}
+
+/* 类别名称区域div和类别节点区域div的顶部边框样式 */
+.orbit-border-top
+{
+    border-top: solid 1px #cccccc !important;
+}
+
+/* 节点图标img样式 */
+.orbit-node-ico
+{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* 节点名称div样式 */
+.orbit-node-name
+{
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+/* 节点横向连线div样式 */
+.orbit-line-hor-gray
+{
+    position: absolute;
+    height: 1px;
+    border: 0;
+    font-size: 0;
+    background-color: #bbbbbb;
+    overflow: hidden;
+    z-index: 100;
+}
+
+/* 节点纵向连线div样式 */
+.orbit-line-ver-gray
+{
+    position: absolute;
+    width: 1px;
+    border: 0;
+    font-size: 0;
+    background-color: #bbbbbb;
+    overflow: hidden;
+    z-index: 100;
+}
+
+/* 关键节点横向连线div样式 */
+.orbit-line-hor-red
+{
+    position: absolute;
+    height: 3px;
+    border: 0;
+    font-size: 0;
+    background-color: #ff0000;
+    overflow: hidden;
+    z-index: 200;
+}
+
+/* 关键节点纵向连线div样式 */
+.orbit-line-ver-red
+{
+    position: absolute;
+    width: 3px;
+    border: 0;
+    font-size: 0;
+    background-color: #ff0000;
+    overflow: hidden;
+    z-index: 200;
+}
+
+/* 横向网格线div样式 */
+.orbit-line-hor-grid
+{
+    position: absolute;
+    height: 1px;
+    border: 0;
+    font-size: 0;
+    background-color: #eeeeee;
+    overflow: hidden;
+    z-index: 60;
+}
+
+/* 纵向网格线div样式 */
+.orbit-line-ver-grid
+{
+    position: absolute;
+    width: 1px;
+    border: 0;
+    font-size: 0;
+    background-color: #eeeeee;
+    overflow: hidden;
+    z-index: 60;
+}
+
+/* 提示文本div样式 */
+.orbit-tip
+{
+    width: 100%;
+    text-align: center;
+    color: #999999;
+    padding-top: 30px;
+}

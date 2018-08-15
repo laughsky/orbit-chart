@@ -32,7 +32,7 @@ chart.drawChart({
         desc: '', // 悬停描述
         img: '/src/images/node.png' // 节点图标路径，有默认值src/images/node.png
     },
-    line: 关系连线数据，结构如：
+    line: // 关系连线数据，结构如：
     {
         preid: '前置节点ID',
         id: '当前节点ID'

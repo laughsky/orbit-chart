@@ -19,26 +19,22 @@ var ajax = function (url, data, dataType, sucess, async, type, before, complete)
 }
 
 $(function () {
-    ajax('./data/type.json', {}, 'json', function (data, status) {
-        var types = data
-        ajax('./data/node.json', {}, 'json', function (data, status) {
-            var nodes = data
-            ajax('./data/line.json', {}, 'json', function (data, status) {
-                var lines = data
+    ajax('./data/data.json', {}, 'json', function (data, status) {
+        var types = data['type']
+        var nodes = data['node']
+        var lines = data['line']
 
-                var chart = OrbitChart.instance
-                chart.drawChart({
-                    'type': types,
-                    'node': nodes,
-                    'line': lines,
-                    'horSpacing': 60,
-                    'verSpacing': 40,
-                    'typeFontSize': 14,
-                    'nodeFontSize': 10,
-                    'gridLine': true,
-                    'srcPath': '../src'
-                })
-            })
+        var chart = OrbitChart.instance
+        chart.drawChart({
+            'type': types,
+            'node': nodes,
+            'line': lines,
+            'horSpacing': 60,
+            'verSpacing': 40,
+            'typeFontSize': 14,
+            'nodeFontSize': 10,
+            'gridLine': true,
+            'srcPath': '../src'
         })
     })
 })

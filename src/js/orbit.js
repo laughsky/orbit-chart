@@ -291,9 +291,9 @@ var OrbitChart = (function () {
                 // 竖线到达后续节点纵向位置后，画横线连接后续节点
                 var lineHorRed = $(this.htmls['red-hor-line'])
                 lineHorRed.css({
-                    'left': this.sizes['type-width'] + (2 * Math.min(pre['x'], next['x']) + 1) * this.sizes['hor-spacing'] / 2,
+                    'left': this.sizes['type-width'] + (2 * Math.min(pre['x'], next['x']) + 1) * this.sizes['hor-spacing'] / 2 + (pre['x'] < next['x'] ? -1 : 1),
                     'top': (2 * next['y'] - 1) * this.sizes['ver-spacing'] / 2 - 1,
-                    'width': Math.abs(next['x'] - pre['x']) * this.sizes['hor-spacing']
+                    'width': Math.abs(next['x'] - pre['x']) * this.sizes['hor-spacing'] + (pre['x'] < next['x'] ? 1 : -1)
                 })
                 this.frame.append(lineHorRed)
             }
@@ -407,13 +407,13 @@ var OrbitChart = (function () {
                         for (var j in lines) {
                             var line = lines[j]
                             if (lines[j]['preid'] == id) {
-                                line['prex'] = x
+                                line['prex'] = parseInt(x)
                                 line['prey'] = data[y]['top'] + data[y]['height']
-                                line['prez'] = z
+                                line['prez'] = parseInt(z)
                             } else if (line['id'] == id) {
-                                line['nextx'] = x
+                                line['nextx'] = parseInt(x)
                                 line['nexty'] = data[y]['top'] + data[y]['height']
-                                line['nextz'] = z
+                                line['nextz'] = parseInt(z)
                             }
                         }
                     }
